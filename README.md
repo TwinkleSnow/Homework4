@@ -1,2 +1,3 @@
 # Homework4
-JavaeeHomework4
+Java EE development task
+Struts2+Hibernate
