@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="com.homework4" extends="struts-default" namespace="/">
+        <action name="login" class="com.homework4.action.UserAction" method="login">
+            <result name="loginSuccess">/success.jsp</result>
+            <result name="loginFailure">/defeat.jsp</result>
+        </action>
+        <action name="register" class="com.homework4.action.UserAction" method="register">
+            <result name="registerSuccess">/index.jsp</result>
+            <result name="registerFailure">/index.jsp</result>
+        </action>
+        <action name="userupdate" class="com.homework4.action.UserAction" method="userupdate">
+            <result name="updateSuccess">/success.jsp</result>
+            <result name="updateFailure">/success.jsp</result>
+        </action>
+        <action name="userdelete" class="com.homework4.action.UserAction" method="userdelete">
+            <result name="deleteSuccess">/success.jsp</result>
+            <result name="deleteFailure">/success.jsp</result>
+        </action>
+    </package>
+</struts>
